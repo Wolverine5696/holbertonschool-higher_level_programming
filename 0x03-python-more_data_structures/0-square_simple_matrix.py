@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 def square_matrix_simple(matrix=[]):
     """
     Return a new list with the square of each element of the matrix.
