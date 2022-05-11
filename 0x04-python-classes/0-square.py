@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-
-"""Write an empty class Square that defines a square"""
+"it's a square class"
 
 
 class Square:
-    """ Pass Works to do nothing in the class"""
-
-    pass
+    "square class with only a private size"
+    def __init__(self, size):
+        self.__size = size
