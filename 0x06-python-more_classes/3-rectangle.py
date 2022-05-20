@@ -1,6 +1,7 @@
+
 #!/usr/bin/python3
 """
-Write a class Rectangle that defines a rectangle by: (based on 3-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 2-rectangle.py)
 """
 
 
@@ -58,7 +59,3 @@ class Rectangle:
         """ Return a string representation of the rectangle to be able to
             recreate a new instance by using eval()"""
         return ("Rectangle({}, {})".format(self.__width, self.__height))
-
-    def __del__(self):
-        """Print Bye rectangle... when an instance of Rectangle is deleted"""
-        print("Bye rectangle...")
