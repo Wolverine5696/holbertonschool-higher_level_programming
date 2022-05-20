@@ -1,23 +1,23 @@
 #!/usr/bin/python3
 """
-Write a class Rectangle that defines a rectangle by: (based on 2-rectangle.py)
+Write a class rectangle that defines a rectangle by: (based on 2-rectangle.py)
 """
 
 
 class Rectangle:
-    """ Class To Define a Rectangle with withd and height"""
+    """ Class To Define a Rectangle with width and height"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """ Getter the width """
+        """ Get the width """
         return (self.__width)
 
     @width.setter
     def width(self, value):
-        """ Setter the value of width"""
+        """ Set the value of width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -26,12 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter the height"""
+        """Get the height"""
         return (self.__height)
 
     @height.setter
     def height(self, value):
-        """ Setter the value of height"""
+        """ Set the value of height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
