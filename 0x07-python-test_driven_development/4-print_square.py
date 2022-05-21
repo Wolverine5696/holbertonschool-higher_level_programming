@@ -1,14 +1,21 @@
+
 #!/usr/bin/python3
 """
-This is the function about  4_print_square.py
+Prints "Prints a square"
 """
 
 
 def print_square(size):
-    """This function prints a square with the carachter #, size >= 0"""
-    if isinstance(size, int):
+    """
+    Checks to make sure size is an int > 0, then prints a square
+    """
+    if type(size) is not int:
+        raise TypeError("size must be an integer")
+    if type(size) is float and size < 0:
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-    for _ in range(size):
-        print("#" * size)
+    for i in range(size):
+        for j in range(size):
+            print("#", end="")
+        print()
