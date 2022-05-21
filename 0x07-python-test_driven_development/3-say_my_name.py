@@ -3,7 +3,6 @@
 This is the module 3-say_my_name.py
 """
 
-
 def say_my_name(first_name, last_name=""):
     """
     Write a function that prints My name is <first name> <last name>
