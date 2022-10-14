@@ -6,5 +6,5 @@ def lookup(obj):
     """
     function to return the object of a list
     """
-    return(dir)
+    return dir(obj)
 
