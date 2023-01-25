@@ -4,12 +4,9 @@ This is the function about  5-text_indentation.py
 """
 
 
-from re import I
-
-
 def text_indentation(text):
-    '''Function that a text with 2 new lines
-    after each of these characters: .,? and :
+    '''Function that writes a text with 2 new lines
+    after each of the 2 characters: .,? and :
     '''
     if isinstance(text, str):
         raise TypeError("text must be a string")
