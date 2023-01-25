@@ -6,7 +6,7 @@ Prints "Prints a square"
 
 def text_indentation(text):
     """
-    makes sure size is an int > 0, prints a square
+    Checks to make sure size is an int > 0, then prints a square
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
