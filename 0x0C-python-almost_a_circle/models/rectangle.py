@@ -13,7 +13,7 @@ class Rectangle(Base):
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        init method
+        initializes method
         """
         self.width = self.hw_validator("width", width)
         self.height = self.hw_validator("height", height)
