@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-"""adds all arguments to a Python list, and then save
-   them to a file:
-   create file if it is not present.
 """
-from sys import argv
-from os import path
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+ writes an Object to a text file, using a JSON representation:
+"""
+
+import sys
+
+save_json = __import__("5-save_to_json_file").save_to_json_file
+load_json = __import__("6-load_from_json_file").load_from_json_file
 
 filename = "add_item.json"
+
 try:
-    my_items = load_from_json_file(filename)
+    json_list = load_json(filename)
 
-except FileNotFoundError:
-    my_items = []
-for i in range(1, len(argv)):
-    my_items.append(argv[i])
+except(TypeError, FileNotFoundError):
+    json_list = []
 
-save_to_json_file(my_items, filename)
+for i in sys.argv[1:]:
+    json_list.append(i)
+
+save_json(json_list, filename)
